@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Saitas</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="stilius.css">
+  </head>
+  <body>
+    <header>
+      <button  class="nav-toggle" aria-label="toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#home" class="nav__link">Pradžia</a></li>
+          <li class="nav__item"><a href="#services" class="nav__link">Ką aš darau</a></li>
+          <li class="nav__item"><a href="#form" class="nav__link">Darbo užsakymo forma</a></li>
+          <li class="nav__item"><a href="#about" class="nav__link">Apie mane</a></li>
+          <li class="nav__item"><a href="#work" class="nav__link">Mano nuotraukos</a></li>
+        </ul>
+      </nav>
+    </header>
+
+
+    <!-- INTRODUCTION -->
+
+      <section class="intro" id="home">
+        <h1 class="section__title section__title--intro">
+          Sveiki, aš esu <strong> Eglė </strong><strong> Krapavickaitė </strong>
+        </h1>
+        <p class="section__subtitle section__subtitle--intro">Fotografė</p>
+          <img src="images/egle.jpg" alt="Eglės nuotrauka pievoje" class="intro__img">
+      </section>
+
+
+      <!-- ka as darau-->
+
+      <section class="my-services" id="services">
+        <h2 class="section__title section__title--services">Ką aš darau</h2>
+        <div class="services">
+          <div class="service">
+            <h3>Asmeninės nuotraukos</h3>
+            <p>Užsisakius asmeninę fotografiją galite rinktis jums palankiausią vietą: yra galimybė fotografuotis studijoje, gamtoje ar kitoje sutartoje vietoje.</p>
+          </div>
+
+          <div class="service">
+            <h3>Renginių nuotraukos</h3>
+            <p>Turiu patirties fotografuojant vestuves, mergvakarius, gimtadienius taip pat klasės šventes.</p>
+          </div>
+
+        </div>
+        <a href="#work" class="btn">Mano nuotraukos</a>
+      </section>
+
+
+
+
+
+      <!--apie mane-->
+
+      <section class="about-me" id="about">
+        <h2 class="section__title section__title--about">Apie mane</h2>
+        <p class="section__subtitle section__subtitle--about">Fotografė mėgėja iš Klaipėdos regiono</p>
+        <div class="about-me__body">
+          <p>Esu Eglė Krapavickaitė, fotografė mėgėja. Darbus atlieku Klaipėdos apylinkėse ir Klaipėdoje. Be fotografavimo taip pat ir apdoroju nuotraukas.</p>
+          <p>Naudojama technika: Nikon D3200 fotoaparatas; objektyvai: AF-S NIKKOR 50mm; AF-S NIKKOR 18-55 mm.</p>
+        </div>
+        <img src="images/egle2.jpg" alt="Eglė stovi netgi su visais rūbais" class="about-me__img">
+      </section>
+
+
+      <!--anketa-->
+
+
+      <section class="form" id="form">
+        <div class="form__anketa">
+          <h2 class="section__title section__title--form">Darbo užsakymo forma</h2>
+          <p class="section__subtitle section__subtitle--form">Užpildydami šitą anketą galite užsisakyti mano paslaugas</p>
+          <div class="forma">
+            <form action="ver1.php" method="post" class="anketa">
+
+        			<p>
+        				<div class="form__names"><label for="firstName">Vardas ir Pavardė:</label></div>
+        				<input type="text" name="first_name" id="firstName" class="input__btn">
+        			</p>
+
+
+
+        			<p>
+        				<div class="form__names"><label for="email">Email:</label></div>
+        				<input type="text" name="email" id="email" class="input__btn">
+        			</p>
+
+
+
+        			<p>
+        				<div class="form__names"><label for="vieta_laikas">Norimų nuotraukų vieta ir laikas:</label></div>
+        				<input type="text" name="vieta_laikas" id="vieta_laikas" class="input__btn">
+        			</p>
+
+              <p>
+        				<div class="form__names"><label for="komentaras">Fotosesijos pobūdis ir kitos svarbios detalės:</label></div>
+        				<input type="text" name="komentaras" id="komentaras" class="input__btn">
+        			</p>
+
+
+
+        			<input type="submit" value="Pateikti" class="btn">
+        		</form>
+          </div>
+        </div>
+
+      </section>
+
+
+      <!--nuotraukos-->
+
+
+      <section class="my-work" id="work">
+        <h2 class="section__title section__title--work">Mano nuotraukos</h2>
+        <p class="section__subtitle section__subtitle--work">Keletas pavyzdžių iš mano padarytų nuotraukų</p>
+
+        <div class="portfolio">
+          <img src="images/darbas1.jpg" alt="" class="portfolio__img">
+          <img src="images/darbas2.jpg" alt="" class="portfolio__img">
+          <img src="images/darbas3.jpg" alt="" class="portfolio__img">
+          <img src="images/darbas4.jpg" alt="" class="portfolio__img">
+          <img src="images/darbas5.jpg" alt="" class="portfolio__img">
+          <img src="images/darbas6.jpg" alt="" class="portfolio__img">
+          <img src="images/darbas7.jpg" alt="" class="portfolio__img">
+          <img src="images/darbas8.jpg" alt="" class="portfolio__img">
+          <img src="images/darbas9.jpg" alt="" class="portfolio__img">
+          <img src="images/darbas10.jpg" alt="" class="portfolio__img">
+          <img src="images/darbas11.jpg" alt="" class="portfolio__img">
+          <img src="images/darbas12.jpg" alt="" class="portfolio__img">
+          <img src="images/darbas13.jpg" alt="" class="portfolio__img">
+          <img src="images/darbas14.jpg" alt="" class="portfolio__img">
+          <img src="images/darbas15.jpg" alt="" class="portfolio__img">
+        </div>
+      </section>
+
+
+        <!-- footer-->
+
+
+        <footer class="footer">
+          <a href="mailto:egle.krapavickaite@gmail.com" class="footer__link">egle.krapavickaite@gmail.com</a>
+          <ul class="social-list">
+            <li class="social-list__item"><a class="social-list__link" href="https://www.instagram.com/_overgreen/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+            <li class="social-list__item"><a class="social-list__link" href="https://www.facebook.com/eglekrap" target="_blank"><i class="fab fa-facebook"></i></a></li>
+
+          </ul>
+        </footer>
+
+
+        <script src="jss/index.js">
+
+        </script>
+  </body>
+</html>
